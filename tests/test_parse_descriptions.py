@@ -20,3 +20,5 @@ from soil_descriptions import Description, parse_description
 def test_parse_description(original, expected):
     parsed = parse_description(original)
     assert parsed.primary == expected.primary
+    assert parsed.secondary == expected.secondary
+    assert parsed.ordered == expected.ordered
